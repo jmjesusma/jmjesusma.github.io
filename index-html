@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>A-Frame iframe</title>
+    <meta name="description" content="ejemplo iframe con a-frame">
+	<style>
+		#pagina{
+			width: 900px;
+			margin: auto;
+		}
+		#header{
+			height: 40px;
+			text-align:center;
+		}
+
+		#VRarea{
+			position: relative;
+			height: 450px;
+			background-color:black;
+		}
+		#vr1{
+			/*width: 900px;
+			height: 450px;*/
+			width: 100%;
+			height: 100%;
+		}
+		#go{
+			position: absolute;
+			left: 829px;
+			top: 395px;
+			width: 53px;
+			height: 39px;
+			background-color:rgba(0,0,0,0.2);
+		}
+		p{
+			text-align:center;
+		}
+	</style>
+  </head>
+  <body>
+	<div id="pagina">
+		<div id="header">
+			<h1>VR A-FRAME</h1>
+		</div>
+		<div id="VRarea">
+			<iframe id="vr1" src="box.html"></iframe>
+			<div id="go" onClick="javascript:document.location='box.html'"></div>
+		</div>
+		<div id="footer">
+			<p>Clicar en las gafas para entrar</p>
+		</div>		
+	</div>
+  </body>
+</html>
